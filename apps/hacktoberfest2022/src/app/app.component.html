@@ -1,9 +1,19 @@
 <div style="text-align: center">
   <h1>Welcome to hacktoberfest2022!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
+  <img width="450" src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
+    alt="Nx - Smart, Fast and Extensible Build System" />
 </div>
 <div>Message: {{ hello$ | async | json }}</div>
+
+<ng-container *ngIf="!isUserNameShowing">
+  <button (click)="showUserName();">Show User Name</button>
+</ng-container>
+
+<ng-container *ngIf="isUserNameShowing">
+  <button (click)="hideUserName();">Hide User Name</button>
+</ng-container>
+
+
+<ng-container *ngIf="isUserNameShowing">
+  <h3>{{(userName$ | async)?.username}}</h3>
+</ng-container>
