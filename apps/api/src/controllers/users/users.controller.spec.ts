@@ -14,7 +14,7 @@ describe('UsersController', () => {
   });
 
   describe('getUsername', () => {
-    it('should return "Welcome to api!"', () => {
+    it('should return "Matthew Allen"', () => {
       const usersController = users.get<UsersController>(UsersController);
       expect(usersController.getUserName()).toEqual({ username: 'Matthew Allen' });
     });
