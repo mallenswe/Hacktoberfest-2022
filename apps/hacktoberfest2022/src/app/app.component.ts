@@ -10,4 +10,8 @@ import { Message } from '@hacktoberfest2022/api-interfaces';
 export class AppComponent {
   hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
+
+  goToProfile(): void {
+    console.log('Navigate to Profile Page.');
+  }
 }
