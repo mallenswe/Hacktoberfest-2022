@@ -7,6 +7,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
 import { ProfileRowComponent } from './components/profile-row/profile-row.component';
+import { AddressComponent } from './components/address/address.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProfileRowComponent } from './components/profile-row/profile-row.compon
     NxWelcomeComponent,
     ProfileDetailsComponent,
     ProfileRowComponent,
+    AddressComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
