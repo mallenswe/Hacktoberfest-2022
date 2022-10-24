@@ -1,1 +1,16 @@
-<p>profile-details works!</p>
+<div class="profile-details">
+  <img
+    class="profile-pic"
+    [src]="profileDetails.profileImage"
+    alt="profile-pic"
+  />
+  <h2 class="user-name">
+    {{ profileDetails.firstName }} {{ profileDetails.lastName }}
+  </h2>
+  <p class="user-profession">{{ profileDetails.jobTitle }}</p>
+  <p class="user-school">{{ profileDetails.schoolName }}</p>
+  <p class="user-location">
+    {{ profileDetails.city }}, {{ profileDetails.state }},
+    {{ profileDetails.country }}
+  </p>
+</div>

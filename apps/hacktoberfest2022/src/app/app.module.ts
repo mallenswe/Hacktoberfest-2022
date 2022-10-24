@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
 import { ProfileRowComponent } from './components/profile-row/profile-row.component';
 import { AvailabilityComponent } from './components/availability/availability.component';
+import { AddressComponent } from './components/address/address.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AvailabilityComponent } from './components/availability/availability.co
     ProfileDetailsComponent,
     ProfileRowComponent,
     AvailabilityComponent,
+    AddressComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
