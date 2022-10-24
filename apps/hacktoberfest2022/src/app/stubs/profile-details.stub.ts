@@ -1,3 +1,4 @@
+import { AvailabilityStatus } from '../constants/availability-status';
 import { profileDetails } from '../interfaces/profile-details';
 
 export const ProfileDetailsStubs01: profileDetails = {
@@ -9,4 +10,5 @@ export const ProfileDetailsStubs01: profileDetails = {
   state: 'Wahington',
   country: 'United States',
   profileImage: 'assets/profile-pic.jpg',
+  availabilityStatus: AvailabilityStatus.ONLINE,
 };

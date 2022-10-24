@@ -1,3 +1,5 @@
+import { AvailabilityStatus } from '../constants/availability-status';
+
 export interface profileDetails {
   firstName: string;
   lastName: string;
@@ -7,4 +9,5 @@ export interface profileDetails {
   state: string;
   country: string;
   profileImage: string;
+  availabilityStatus: AvailabilityStatus;
 }

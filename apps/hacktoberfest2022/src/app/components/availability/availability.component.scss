@@ -1,0 +1,25 @@
+:host {
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .status-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin-right: 4px;
+  }
+
+  .green {
+    background-color: greenyellow;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: gold;
+  }
+}
