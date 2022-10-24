@@ -1,7 +1,16 @@
 <div class="profile-details">
-  <img class="profile-pic" src="assets/profile-pic.jpg" alt="profile-pic" />
-  <h2 class="user-name">Paris S</h2>
-  <p class="user-profession">Software Engineer at Disney</p>
-  <p class="user-school">Disney . University of Texas at Arlington</p>
-  <p class="user-location">Bellevue, Wahington, United States</p>
+  <img
+    class="profile-pic"
+    [src]="profileDetails.profileImage"
+    alt="profile-pic"
+  />
+  <h2 class="user-name">
+    {{ profileDetails.firstName }} {{ profileDetails.lastName }}
+  </h2>
+  <p class="user-profession">{{ profileDetails.jobTitle }}</p>
+  <p class="user-school">{{ profileDetails.schoolName }}</p>
+  <p class="user-location">
+    {{ profileDetails.city }}, {{ profileDetails.state }},
+    {{ profileDetails.country }}
+  </p>
 </div>
