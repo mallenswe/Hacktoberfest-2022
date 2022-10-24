@@ -1,0 +1,36 @@
+.profile-details-row {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  align-items: center;
+  padding: 10px;
+
+  *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.profile-pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+}
+
+.user-name {
+  font-size: 1.5em;
+}
+
+.user-profession,
+.user-school,
+.user-location {
+  font-size: 1em;
+}
+
+.user-profession {
+  font-weight: bold;
+}
+
+.user-location {
+  color: gray;
+}
